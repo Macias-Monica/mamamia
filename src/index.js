@@ -113,21 +113,28 @@ function Footer() {
   const hour = new Date().getHours();
   const openHour = 11;
   const closedHour = 22;
-  const isOpen = hour >= openHour && hour <= closedHour;
+  const isOpen = hour >= openHour && hour < closedHour; // Corrección: cerrado antes de las 22
   console.log(isOpen);
   return (
     <footer className="footer">
       {isOpen ? (
         <Order closed={closedHour} open={openHour} />
       ) : (
-        <p>
-          Estamos alegres de atenderlo entre las {openHour}:00 y las{" "}
-          {closedHour}:00.
-        </p>
+        <>
+          <p>
+            Estamos alegres de atenderlo entre las {openHour}:00 y las{" "}
+            {closedHour}:00.
+          </p>
+          <br />
+          Dirección: Calle de la Pizza 123, Ciudad del Sabor, CP 45678 <br />
+          Teléfono: (555) 123-4567 <br />
+          Correo electrónico: contacto@pizzeriamamamia.com
+        </>
       )}
     </footer>
   );
 }
+
 
 function Order({ closed, open }) {
   return (
