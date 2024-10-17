@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const pizzaData = [
   {
@@ -114,7 +116,7 @@ function Footer() {
   const openHour = 11;
   const closedHour = 22;
   const isOpen = hour >= openHour && hour < closedHour; // Corrección: cerrado antes de las 22
-  console.log(isOpen);
+
   return (
     <footer className="footer">
       {isOpen ? (
@@ -131,24 +133,48 @@ function Footer() {
           Correo electrónico: contacto@pizzeriamamamia.com
         </>
       )}
+      <IconWA></IconWA>
     </footer>
   );
 }
 
+function IconWA() {
+  return (
+    <div style={{ position: "relative" }}>
+      <a
+        href="https://wa.me/5213921057200"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon
+          icon={faWhatsapp}
+          size="4x"
+          style={{
+            color: "#25D366",
+            marginRight: "10px",
+            position: "fixed",
+            right: "50px",
+            bottom: "40px",
+          }}
+        />
+      </a>
+    </div>
+  );
+}
 
 function Order({ closed, open }) {
   return (
     <div className="order">
       <p>
-      ¡Estamos actualmente abiertos! Nuestro horario de atención es de{" "}
-        {open}:00 hasta {closed}:00 ¡Ven a visitarnos u ordena en línea! :D
+        ¡Estamos actualmente abiertos! Nuestro horario de atención es de {open}
+        :00 hasta {closed}:00 ¡Ven a visitarnos u ordena en línea! :D
       </p>
       <button className="btn">Ordena!</button>
       <p>
-      <br></br>
-      Dirección: Calle de la Pizza 123, Ciudad del Sabor, CP 45678 <br></br>
-      Teléfono: (555) 123-4567 <br></br> 
-      Correo electrónico: contacto@pizzeriamamamia.com
+        <br></br>
+        Dirección: Calle de la Pizza 123, Ciudad del Sabor, CP 45678 <br></br>
+        Teléfono: (555) 123-4567 <br></br>
+        Correo electrónico: contacto@pizzeriamamamia.com
       </p>
     </div>
   );
