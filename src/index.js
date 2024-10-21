@@ -55,6 +55,7 @@ function App() {
     <div className="container">
       <Header />
       <Menu />
+      <SectionMap />
       <Footer />
     </div>
   );
@@ -111,10 +112,30 @@ function Pizza({ pizzaObj }) {
   );
 }
 
+function SectionMap() {
+  const mapstyles = {
+    width: "600px",
+    height: "450px",
+    border: "0",
+    allowFullscreen: "",
+    loading: "lazy",
+    referrerPolicy: "no-referrer-when-downgrade",
+  };
+  return (
+    <div className="menu">
+      <h2>Mapa</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.0326850471415!2d-117.06111006254348!3d32.3737865012155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9316dbf79bb71%3A0x22f3c55be5a6f844!2sLittle%20Caesars%20Pizza!5e0!3m2!1ses-419!2smx!4v1729322092716!5m2!1ses-419!2smx"
+        style={mapstyles}
+      ></iframe>
+    </div>
+  );
+}
+
 function Footer() {
   const hour = new Date().getHours();
-  const openHour = 11;
-  const closedHour = 22;
+  const openHour = 0; // 11
+  const closedHour = 24; // 22
   const isOpen = hour >= openHour && hour < closedHour; // Corrección: cerrado antes de las 22
 
   return (
