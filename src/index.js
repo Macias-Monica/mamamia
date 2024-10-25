@@ -1,18 +1,18 @@
-
-import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import OrderPage from "./order";  // Importar la nueva página de pedidos
+import OrderPage from "./order";  // Página de pedidos
+import React from 'react';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/order" element={<OrderPage />} />  {/* Nueva ruta */}
+        <Route path="/order" element={<OrderPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
