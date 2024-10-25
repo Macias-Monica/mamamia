@@ -200,3 +200,61 @@ body {
 .order-form button:hover {
   background-color: #e9bb24;
 }
+
+.social-media-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media-container p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-media-icons a {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+/* Colores de hover específicos para cada red social */
+.social-media-icons a.facebook:hover {
+  color: #3b5998;
+}
+
+.social-media-icons a.twitter:hover {
+  color: #1da1f2;
+}
+
+.social-media-icons a.instagram:hover {
+  color: #e1306c;
+}
+
+.social-media-icons a.linkedin:hover {
+  color: #0077b5;
+}
+
+.social-media-container p {
+	font-size: 2rem;
+}
+
+.social-media-container {
+  text-align: center;
+  margin-top: 100px; /* Incrementa el margen para mayor separación */
+}
+
+.footer {
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.social-media-container {
+  margin-top: 20px; /* Ajusta este valor según el espacio que desees */
+}

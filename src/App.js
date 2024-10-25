@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./index.css";
 import OrderPage from "./order";
 
@@ -115,6 +116,7 @@ function Footer() {
         </>
       )}
       <IconWA />
+      <SocialMediaIcons />
     </footer>
   );
 }
@@ -134,6 +136,28 @@ function IconWA() {
           }}
         />
       </a>
+    </div>
+  );
+}
+
+function SocialMediaIcons() {
+  return (
+    <div className="social-media-container">
+      <p>Síguenos en nuestras redes sociales</p>
+      <div className="social-media-icons">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="facebook">
+          <FontAwesomeIcon icon={faFacebook} size="2x" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="twitter">
+          <FontAwesomeIcon icon={faTwitter} size="2x" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="instagram">
+          <FontAwesomeIcon icon={faInstagram} size="2x" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin">
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </a>
+      </div>
     </div>
   );
 }
