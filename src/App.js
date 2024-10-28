@@ -42,7 +42,7 @@ function Header() {
             <Link to="/order">Ordenar</Link>
           </li>
           <li>
-            <Link to="/promociones">Promociones</Link>
+            <Link to="/jobs">Empleo</Link>
           </li>
         </ul>
       </nav>
