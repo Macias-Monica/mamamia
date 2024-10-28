@@ -6,6 +6,7 @@ import OrderPage from "./order"; // Página de pedidos
 import Menu from "./Menu";
 import React from "react";
 import JobApplicationPage from "./jobs";
+import ReviewsPage from "./reviews";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -17,6 +18,7 @@ root.render(
         <Route path="/Menu" element={<Menu />} />
         <Route path="/order" element={<OrderPage />} />
         <Route path="/jobs" element={<JobApplicationPage />} />
+        <Route path="/reviews" element={<ReviewsPage />} />
       </Routes>
     </Router>
   </React.StrictMode>

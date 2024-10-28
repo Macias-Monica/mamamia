@@ -44,6 +44,9 @@ function Header() {
           <li>
             <Link to="/jobs">Empleo</Link>
           </li>
+          <li>
+            <Link to="/reviews">Reviews</Link>
+          </li>
         </ul>
       </nav>
       <h1>Pizzeria MamaMia</h1>
