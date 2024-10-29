@@ -1,54 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
-export default function NavBar() {
+export default function Header() {
   return (
-    <nav style={styles.navbar}>
-      <ul style={styles.navList}>
-        <ListItem direction={"/"}>Inicio</ListItem>
-        <ListItem direction="/menu">Menu</ListItem>
-        <ListItem direction={"/promociones"}>Promociones</ListItem>
-        <ListItem direction={"/directorio"}>Directorio</ListItem>
-        <ListItem direction={"/ubicacion"}>Ubicacion</ListItem>
-      </ul>
-    </nav>
+    <header className="header">
+      <nav className="navbar">
+        <ul className="nav-links ">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/menu">Menu</Link>
+          </li>
+          <li>
+            <Link to="/order">Ordenar</Link>
+          </li>
+          <li>
+            <Link to="/jobs">Empleo</Link>
+          </li>
+          <li>
+            <Link to="/reviews">Reviews</Link>
+          </li>
+        </ul>
+      </nav>
+      <h1>Pizzeria MamaMia</h1>
+    </header>
   );
 }
-
-function ListItem({ direction, children }) {
-  return (
-    <li style={styles.navLink}>
-      <Link to={direction}>{children}</Link>
-    </li>
-  );
-}
-
-const styles = {
-  navbar: {
-    backgroundColor: "#ff6347", // Color tipo tomate (relacionado con pizza)
-    padding: "10px",
-    textAlign: "center",
-    fontFamily: "Poppins, arial, sans-serif",
-    position: "sticky",
-    top: "0",
-    left: "0",
-  },
-  navList: {
-    listStyleType: "none",
-    margin: 0,
-    padding: 0,
-    display: "flex",
-    justifyContent: "space-around",
-  },
-  navItem: {
-    margin: "0 15px",
-    paddingRight: "2px",
-    borderRight: "1px solid black",
-  },
-  navLink: {
-    textDecoration: "none",
-    color: "white",
-    fontSize: "18px",
-    fontWeight: "bold",
-  },
-};

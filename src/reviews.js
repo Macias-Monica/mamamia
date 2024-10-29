@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "./NavBar";
 
 function ReviewsPage() {
   const [name, setName] = useState("");
@@ -29,6 +30,7 @@ function ReviewsPage() {
 
   return (
     <div className="container">
+      <Header></Header>
       <h2>Deja tu Reseña</h2>
       <form onSubmit={handleSubmit} className="review-form">
         <label htmlFor="name">Nombre:</label>

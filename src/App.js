@@ -9,9 +9,8 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import "./index.css";
-import OrderPage from "./order";
-
 import Menu from "./Menu";
+import Header from "./NavBar";
 
 const openHour = 0; // Hora de apertura
 const closedHour = 24; // Hora de cierre
@@ -19,38 +18,10 @@ const closedHour = 24; // Hora de cierre
 function App() {
   return (
     <div className="container">
-      <Header />
       <Menu />
       <SectionMap />
       <Footer />
     </div>
-  );
-}
-
-function Header() {
-  return (
-    <header className="header">
-      <nav className="navbar">
-        <ul className="nav-links ">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/menu">Menu</Link>
-          </li>
-          <li>
-            <Link to="/order">Ordenar</Link>
-          </li>
-          <li>
-            <Link to="/jobs">Empleo</Link>
-          </li>
-          <li>
-            <Link to="/reviews">Reviews</Link>
-          </li>
-        </ul>
-      </nav>
-      <h1>Pizzeria MamaMia</h1>
-    </header>
   );
 }
 

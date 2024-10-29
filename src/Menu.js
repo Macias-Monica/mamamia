@@ -1,3 +1,5 @@
+import Header from "./NavBar";
+
 // Datos de pizzas
 const pizzaData = [
   {
@@ -49,6 +51,7 @@ export default function Menu() {
   const pizzas = pizzaData;
   return (
     <main className="menu">
+      <Header></Header>
       <h2>Nuestro Menú</h2>
       {pizzas.length > 0 ? (
         <>

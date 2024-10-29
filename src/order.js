@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "./NavBar";
 
 function OrderPage() {
   const [name, setName] = useState("");
@@ -13,6 +14,7 @@ function OrderPage() {
 
   return (
     <div className="container">
+      <Header></Header>
       <h2>Ordena tu Pizza</h2>
       <form onSubmit={handleSubmit} className="order-form">
         <label htmlFor="name">Nombre:</label>

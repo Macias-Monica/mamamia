@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Header from "./NavBar";
+
 
 function JobApplicationPage() {
   const [name, setName] = useState("");
@@ -17,6 +19,7 @@ function JobApplicationPage() {
 
   return (
     <div className="container">
+      <Header></Header>
       <h2>Solicita un Empleo en la Pizzería</h2>
       <form onSubmit={handleSubmit} className="job-application-form">
         <label htmlFor="name">Nombre:</label>
