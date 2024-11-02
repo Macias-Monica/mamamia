@@ -21,6 +21,9 @@ export default function Header() {
             <Link to="/reviews">Reviews</Link>
           </li>
           <li>
+            <Link to="/locations">Directorio</Link>
+          </li>
+          <li>
             <Link to="/aboutus">Nuestra Historia</Link>
           </li>
         </ul>
