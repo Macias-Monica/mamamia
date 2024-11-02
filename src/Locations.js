@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./NavBar"; // Asegúrate de importar tu Navbar
+import Header from "./NavBar";
 
 function Locations() {
   const branches = [

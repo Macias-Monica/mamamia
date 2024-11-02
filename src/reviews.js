@@ -5,13 +5,32 @@ function ReviewsPage() {
   const [name, setName] = useState("");
   const [rating, setRating] = useState("5");
   const [comments, setComments] = useState("");
-  
-  // Reseñas prehechas
+
   const [reviews, setReviews] = useState([
-    { name: "Ana García", rating: "5", comments: "¡La mejor pizza que he probado! Los ingredientes son frescos y el servicio es excelente." },
-    { name: "Carlos Pérez", rating: "4", comments: "Muy buena pizza, aunque podrían mejorar la rapidez en el servicio." },
-    { name: "Lucía Méndez", rating: "5", comments: "Gran variedad de opciones y sabores únicos. Definitivamente volveré." },
-    { name: "Juan López", rating: "3", comments: "La pizza estaba bien, pero esperaba algo más especial por el precio." },
+    {
+      name: "Ana García",
+      rating: "5",
+      comments:
+        "¡La mejor pizza que he probado! Los ingredientes son frescos y el servicio es excelente.",
+    },
+    {
+      name: "Carlos Pérez",
+      rating: "4",
+      comments:
+        "Muy buena pizza, aunque podrían mejorar la rapidez en el servicio.",
+    },
+    {
+      name: "Lucía Méndez",
+      rating: "5",
+      comments:
+        "Gran variedad de opciones y sabores únicos. Definitivamente volveré.",
+    },
+    {
+      name: "Juan López",
+      rating: "3",
+      comments:
+        "La pizza estaba bien, pero esperaba algo más especial por el precio.",
+    },
   ]);
 
   const handleSubmit = (e) => {
@@ -63,7 +82,9 @@ function ReviewsPage() {
           required
         ></textarea>
 
-        <button type="submit" className="btn">Enviar Reseña</button>
+        <button type="submit" className="btn">
+          Enviar Reseña
+        </button>
       </form>
 
       <h3>Reseñas de Clientes</h3>
@@ -88,7 +109,7 @@ function ReviewsPage() {
         .reviews-list {
           display: flex;
           flex-direction: column;
-		  width: 60%;
+          width: 60%;
         }
 
         .review-form label,
@@ -108,7 +129,7 @@ function ReviewsPage() {
         .review-form button {
           margin-top: 15px;
           padding: 10px;
-          background-color: #4CAF50;
+          background-color: #4caf50;
           color: white;
           border: none;
           border-radius: 4px;

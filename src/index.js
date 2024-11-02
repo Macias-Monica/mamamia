@@ -22,8 +22,8 @@ root.render(
         <Route path="/order" element={<OrderPage />} />
         <Route path="/jobs" element={<JobApplicationPage />} />
         <Route path="/reviews" element={<ReviewsPage />} />
-		<Route path="/locations" element={<Locations />} />
-		<Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/locations" element={<Locations />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/FAQ" element={<FAQ />} />
       </Routes>
     </Router>

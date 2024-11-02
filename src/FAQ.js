@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./NavBar"; // Asegúrate de importar tu Navbar
+import Header from "./NavBar";
 
 function FAQ() {
   const faqs = [
@@ -9,11 +9,13 @@ function FAQ() {
     },
     {
       question: "¿Hacen entregas a domicilio?",
-      answer: "Sí, ofrecemos servicio de entrega a domicilio en todas nuestras sucursales.",
+      answer:
+        "Sí, ofrecemos servicio de entrega a domicilio en todas nuestras sucursales.",
     },
     {
       question: "¿Puedo hacer un pedido por teléfono?",
-      answer: "¡Claro! Puedes llamarnos al (555) 123-4567 para hacer tu pedido.",
+      answer:
+        "¡Claro! Puedes llamarnos al (555) 123-4567 para hacer tu pedido.",
     },
     {
       question: "¿Tienen opciones vegetarianas?",
@@ -21,39 +23,48 @@ function FAQ() {
     },
     {
       question: "¿Aceptan pagos con tarjeta?",
-      answer: "Sí, aceptamos pagos en efectivo y con tarjeta de crédito o débito.",
+      answer:
+        "Sí, aceptamos pagos en efectivo y con tarjeta de crédito o débito.",
     },
     {
       question: "¿Puedo personalizar mi pizza?",
-      answer: "¡Por supuesto! Puedes elegir los ingredientes que prefieras para personalizar tu pizza.",
+      answer:
+        "¡Por supuesto! Puedes elegir los ingredientes que prefieras para personalizar tu pizza.",
     },
     {
       question: "¿Hacen promociones o descuentos?",
-      answer: "Sí, ofrecemos promociones especiales los fines de semana y descuentos para grupos grandes.",
+      answer:
+        "Sí, ofrecemos promociones especiales los fines de semana y descuentos para grupos grandes.",
     },
     {
       question: "¿Tienen un menú para niños?",
-      answer: "Sí, contamos con un menú especial para niños con opciones más pequeñas y precios reducidos.",
+      answer:
+        "Sí, contamos con un menú especial para niños con opciones más pequeñas y precios reducidos.",
     },
     {
       question: "¿Cómo puedo hacer una reserva?",
-      answer: "Puedes hacer una reserva llamándonos al (555) 123-4567 o a través de nuestra página web.",
+      answer:
+        "Puedes hacer una reserva llamándonos al (555) 123-4567 o a través de nuestra página web.",
     },
     {
       question: "¿Tienen opciones sin gluten?",
-      answer: "Sí, ofrecemos pizzas con masa sin gluten para aquellos que lo necesiten.",
+      answer:
+        "Sí, ofrecemos pizzas con masa sin gluten para aquellos que lo necesiten.",
     },
     {
       question: "¿Cuál es su pizza más popular?",
-      answer: "Nuestra pizza más popular es la 'Mama Mia Special', con ingredientes frescos y una mezcla de sabores únicos.",
+      answer:
+        "Nuestra pizza más popular es la 'Mama Mia Special', con ingredientes frescos y una mezcla de sabores únicos.",
     },
     {
       question: "¿Ofrecen catering para eventos?",
-      answer: "Sí, ofrecemos servicios de catering para eventos y reuniones. Contáctanos para más detalles.",
+      answer:
+        "Sí, ofrecemos servicios de catering para eventos y reuniones. Contáctanos para más detalles.",
     },
     {
       question: "¿Tienen servicio para llevar?",
-      answer: "Sí, puedes pedir tu pizza para llevar en cualquiera de nuestras sucursales.",
+      answer:
+        "Sí, puedes pedir tu pizza para llevar en cualquiera de nuestras sucursales.",
     },
   ];
 

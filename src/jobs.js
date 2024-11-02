@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Header from "./NavBar";
 
-
 function JobApplicationPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
