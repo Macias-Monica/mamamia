@@ -2,13 +2,14 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import OrderPage from "./order"; // Página de pedidos
+import OrderPage from "./order";
 import Menu from "./Menu";
 import React from "react";
 import JobApplicationPage from "./jobs";
 import ReviewsPage from "./reviews";
-import AboutUs from "./AboutUs"; // Importa el nuevo componente
-import Locations from "./Locations"; // Actualiza la importación aquí
+import AboutUs from "./AboutUs";
+import Locations from "./Locations";
+import FAQ from "./FAQ";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -23,6 +24,7 @@ root.render(
         <Route path="/reviews" element={<ReviewsPage />} />
 		<Route path="/locations" element={<Locations />} />
 		<Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/FAQ" element={<FAQ />} />
       </Routes>
     </Router>
   </React.StrictMode>

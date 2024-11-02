@@ -26,6 +26,9 @@ export default function Header() {
           <li>
             <Link to="/aboutus">Nuestra Historia</Link>
           </li>
+          <li>
+            <Link to="/FAQ">FAQ</Link>
+          </li>
         </ul>
       </nav>
       <h1>Pizzeria MamaMia</h1>
