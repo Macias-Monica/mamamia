@@ -7,6 +7,7 @@ import Menu from "./Menu";
 import React from "react";
 import JobApplicationPage from "./jobs";
 import ReviewsPage from "./reviews";
+import AboutUs from "./AboutUs"; // Importa el nuevo componente
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,6 +20,7 @@ root.render(
         <Route path="/order" element={<OrderPage />} />
         <Route path="/jobs" element={<JobApplicationPage />} />
         <Route path="/reviews" element={<ReviewsPage />} />
+		<Route path="/AboutUs" element={<AboutUs />} />
       </Routes>
     </Router>
   </React.StrictMode>
