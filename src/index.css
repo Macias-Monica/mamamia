@@ -65,6 +65,7 @@ body {
   right: 0;
 }
 
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -277,3 +278,9 @@ body {
   font-size: 20px;
   color: #555;
 }
+
+h2{
+  font-size: x-large;
+    color: #8B5E3C;
+    margin-bottom: 20px;
+ }

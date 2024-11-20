@@ -82,16 +82,6 @@ function FAQ() {
       </section>
 
       <style jsx>{`
-        .container {
-          max-width: 600px;
-          margin: auto;
-          padding: 20px;
-        }
-
-        h2 {
-          color: #4caf50;
-          margin-bottom: 20px;
-        }
 
         h3 {
           margin-top: 15px;
@@ -103,6 +93,7 @@ function FAQ() {
           padding: 10px;
           border: 1px solid #ddd;
           border-radius: 4px;
+          font-size: small; 
         }
 
         p {

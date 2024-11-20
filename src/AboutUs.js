@@ -28,21 +28,11 @@ function AboutUs() {
       </p>
 
       <style jsx>{`
-        .container {
-          max-width: 600px;
-          margin: auto;
-          padding: 20px;
-        }
-
-        h2 {
-          color: #4caf50;
-          margin-bottom: 20px;
-        }
-
-        p {
+            p {
           margin: 10px 0;
           line-height: 1.6;
           color: #555;
+          font-size: large;
         }
       `}</style>
     </div>

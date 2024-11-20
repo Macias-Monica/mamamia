@@ -45,27 +45,22 @@ function Locations() {
       </section>
 
       <style jsx>{`
-        .container {
-          max-width: 600px;
-          margin: auto;
-          padding: 20px;
-        }
 
-        h2 {
-          color: #4caf50;
-          margin-bottom: 20px;
-        }
-
-        h3 {
-          margin-top: 20px;
-          color: #333;
+        .branches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px; 
+        padding: 10px; 
         }
 
         .branch {
-          margin-bottom: 20px;
-          padding: 10px;
-          border: 1px solid #ddd;
-          border-radius: 4px;
+          background-color: #f9f9f9;
+          border: 1px solid #ddd; 
+          border-radius: 5px; 
+          padding: 15px; 
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+          font-size: large;
+          width: max-content;
         }
 
         p {

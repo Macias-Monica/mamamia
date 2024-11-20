@@ -9,9 +9,6 @@ export default function Header() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/menu">Menu</Link>
-          </li>
-          <li>
             <Link to="/order">Ordenar</Link>
           </li>
           <li>
